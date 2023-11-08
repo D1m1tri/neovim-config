@@ -11,3 +11,5 @@ vk.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
 vk.set("n", "<leader><leader>", function()
   vim.cmd("so")
 end)
+
+vk.set("t", "<Esc>", "<C-\\><C-n>")
