@@ -6,10 +6,10 @@ lsp.on_attach(function(client, bufnr)
 
   local opts = {buffer = bufnr, remap = false}
   vk = vim.keymap
-  vk.set('n', 'jd', function() vim.lsp.buf.definition() end, opts)
+  vk.set('n', 'gd', function() vim.lsp.buf.definition() end, opts)
   vk.set('n', 'K', function() vim.lsp.buf.hover() end, opts)
-  vk.set('n', 'jl', function() vim.diagnostic.goto_next() end, opts)
-  vk.set('n', 'jh', function() vim.diagnostic.goto_prev() end, opts)
+  vk.set('n', 'gl', function() vim.diagnostic.goto_next() end, opts)
+  vk.set('n', 'gh', function() vim.diagnostic.goto_prev() end, opts)
   vk.set('n', 'sd', function() vim.diagnostic.open_float() end, opts)
 end)
 
