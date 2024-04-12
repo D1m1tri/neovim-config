@@ -16,7 +16,7 @@ vo.wrap = true
 
 vo.swapfile = false
 vo.backup = false
-vo.undodir = os.getenv("HOME") .. "/.neovim/undodir"
+vo.undodir = os.getenv("HOME") .. "/.config/nvim/undodir"
 vo.undofile = true
 
 vo.hlsearch = false
